@@ -834,7 +834,7 @@ def random_scroll():
 
 driver = create_browser()
 # Go to the page
-driver.get("https://www.homegate.ch/de")
+driver.get("URL")
 
 # Step 1: Accept cookies
 try:
@@ -910,7 +910,7 @@ try:
 except Exception as e:
 #If page does not load properly first time. Exception repeats page refresh until it works.
     print(f"Error: {e}")
-    restart_browser("https://www.homegate.ch/kaufen/immobilien/land-schweiz/trefferliste")
+    restart_browser("URL")
 
 def get_re_data(page_number):
     print("initialising data extraction")
