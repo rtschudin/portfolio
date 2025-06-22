@@ -18,7 +18,7 @@ service = Service(ChromeDriverManager(driver_version="131.0.6778").install())
 driver = webdriver.Chrome(service=service)
 PATH = "/Users/raoultschudin/chromedriver"
 driver = webdriver.Chrome(PATH)
-driver.get("https://www.transfermarkt.ch/")
+driver.get("URL")
 driver.implicitly_wait(10)
 print(driver.title)
 
